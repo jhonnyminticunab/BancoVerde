@@ -15,8 +15,7 @@ public class AdministradorService {
 
     @Transactional(readOnly=false)
     public Administrador save(Administrador administrador) {
-        
-        return administrador.save(administrador);
+        return administradorDao.save(administrador);
     }
 
     @Transactional(readOnly=false)

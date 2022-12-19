@@ -6,6 +6,8 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Getter;
@@ -30,7 +32,7 @@ public class Transaccion implements Serializable {
     @Column(name="tipo_transaccion")
     private String tipo_transaccion;
     
-/*
+
     @ManyToOne
     @JoinColumn(name="id_cuenta")
     private Cuenta cuenta;
@@ -40,6 +42,6 @@ public class Transaccion implements Serializable {
         return "Transacción [idTransaccion=" + id_transaccion + ", Fecha Transacción=" + fecha_transaccion + ", Valor Transacción="
                 + valor_transaccion + ", Tipo Transacción=" + tipo_transaccion + "]";
     }
-*/  
+     
 
 }
